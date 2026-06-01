@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications · YourLab</title>
+    <title>Publications · Harms Lab</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 
     <header class="site-header">
         <nav class="navbar">
-            <a href="index.html" class="nav-logo">YourLab</a>
+            <a href="index.html" class="nav-logo">Harms Lab</a>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="people.html">People</a></li>
@@ -36,30 +36,36 @@
         <section class="section-pad">
             <div class="container">
 
+
+				<div class="filter-bar">
+					<button class="filter-btn active" data-filter="all">All</button>
+					<button class="filter-btn" data-filter="online-harms">Harms &amp; Safety</button>
+					<button class="filter-btn" data-filter="online-fraud">Online Fraud</button>
+					<button class="filter-btn" data-filter="propaganda">Propaganda &amp; Extremism</button>
+					<button class="filter-btn" data-filter="ethics-privacy">Ethics &amp; Privacy</button>
+				</div>
+
                 <div class="pub-year-group">
                     <h2 class="pub-year">2026</h2>
                     <div class="pub-list">
-                        <article class="pub-item">
+                        <article class="pub-item" data-keywords="propaganda">
                             <div class="pub-meta">
-                                <span class="pub-venue">Conference / Journal Name</span>
+                                <span class="pub-venue">International AAAI Conference on Web and Social Media (ICWSM '26)</span>
                             </div>
-                            <h3 class="pub-title">Your Paper Title Goes Here</h3>
-                            <p class="pub-authors">Author One, Author Two, <strong>Your Name</strong>, Author Four</p>
+                            <h3 class="pub-title">Decoding Influence Narratives: Identifying Persuasion and Propaganda Techniques in Twitter Discourse on Violent Extremism</h3>
+                            <p class="pub-authors">Shu Jia Chee, Sara Rubini, Paul Gill, Enrico Mariconti</p>
                             <div class="pub-links">
-                                <a href="#">PDF</a>
-                                <a href="#">Code</a>
-                                <a href="#">BibTeX</a>
+                                <a href="https://doi.org/10.1609/icwsm.v20i1.42648">PDF</a>
                             </div>
                         </article>
-                        <article class="pub-item">
+                        <article class="pub-item" data-keywords="online-harms">
                             <div class="pub-meta">
-                                <span class="pub-venue">Conference / Journal Name</span>
+                                <span class="pub-venue">Social Science Computer Review</span>
                             </div>
-                            <h3 class="pub-title">Another Paper Title Goes Here</h3>
-                            <p class="pub-authors">Author One, <strong>Your Name</strong>, Author Three</p>
+                            <h3 class="pub-title">Decoding Psychological Abuse: A Comparative Study of Natural Language Processing (NLP)Classifiers Using Reddit Data</h3>
+                            <p class="pub-authors">Maya Ashkenazi, Jessica Lilly Neubauer, Maria Perez-Ortiz, Enrico Mariconti, Leonie Maria Tanczer</p>
                             <div class="pub-links">
-                                <a href="#">PDF</a>
-                                <a href="#">BibTeX</a>
+                                <a href="https://journals.sagepub.com/doi/pdf/10.1177/08944393261435087">PDF</a>
                             </div>
                         </article>
                     </div>
@@ -68,15 +74,76 @@
                 <div class="pub-year-group">
                     <h2 class="pub-year">2025</h2>
                     <div class="pub-list">
-                        <article class="pub-item">
+						<article class="pub-item", data-keywords="online-harms">
                             <div class="pub-meta">
-                                <span class="pub-venue">Conference / Journal Name</span>
+                                <span class="pub-venue">Harm Reduction Journal</span>
                             </div>
-                            <h3 class="pub-title">Earlier Paper Title</h3>
-                            <p class="pub-authors"><strong>Your Name</strong>, Collaborator Name</p>
+                            <h3 class="pub-title">Platforms, risk perceptions, and reporting: the impact of illicit advertisements on social media among UK secondary students</h3>
+                            <p class="pub-authors">Ashly Fuller, Marie Vasek, Enrico Mariconti, Shane D Johnson</p>
                             <div class="pub-links">
-                                <a href="#">PDF</a>
-                                <a href="#">BibTeX</a>
+                                <a href="https://link.springer.com/article/10.1186/s12954-025-01299-5">PDF</a>
+                                
+                            </div>
+                        </article>
+						<article class="pub-item" data-keywords="online-harms">
+                            <div class="pub-meta">
+                                <span class="pub-venue">ACM on Human-Computer Interaction (CHI) '25</span>
+                            </div>
+                            <h3 class="pub-title">"Edit: I'm sorry for being offensive, this is getting downvoted and I feel terrible": Implicit Social Norms as Governance in Identity-Based Communities</h3>
+                            <p class="pub-authors">Kyle Beadle, Mark Warner, Marie Vasek</p>
+                            <div class="pub-links">
+                                <a href="https://dl.acm.org/doi/pdf/10.1145/3710900">PDF</a>
+                                
+                            </div>
+                        </article>
+						<article class="pub-item" data-keywords="online-fraud">
+                            <div class="pub-meta">
+                                <span class="pub-venue">Crime Science</span>
+                            </div>
+                            <h3 class="pub-title">Applications of AI-based models for online fraud detection and analysis</h3>
+                            <p class="pub-authors">Antonis Papasavva, Samantha Lundrigan, Ed Lowther, Shane Johnson, Enrico Mariconti, Anna Markovska, Nilufer Tuptuk</p>
+                            <div class="pub-links">
+                                <a href="https://link.springer.com/article/10.1186/s40163-025-00248-8">PDF</a>
+                                
+                            </div>
+                        </article>
+                        <article class="pub-item" data-keywords="ethics-privacy">
+                            <div class="pub-meta">
+                                <span class="pub-venue">IEEE Symposium on Security and Privacy '25</span>
+                            </div>
+                            <h3 class="pub-title">SoK: a privacy framework for security research using social media data</h3>
+                            <p class="pub-authors">Kyle Beadle, Kieron Ivy Turk, Aliai Eusebi, Mindy Tran, Marilyne Ordekian, Enrico Mariconti, Yixin Zou, Marie Vasek</p>
+                            <div class="pub-links">
+                                <a href="https://discovery.ucl.ac.uk/id/eprint/10207363/1/sp2025c2-final609.pdf">PDF</a>
+                                
+                            </div>
+                        </article>
+						<article class="pub-item" data-keywords="online-fraud">
+                            <div class="pub-meta">
+                                <span class="pub-venue">USENIX Security '25</span>
+                            </div>
+                            <h3 class="pub-title">'Hey mum, I dropped my phone down the toilet': Investigating Hi Mum and Dad {SMS} Scams in the United Kingdom</h3>
+                            <p class="pub-authors">Sharad Agarwal, Emma Harvey, Enrico Mariconti, Guillermo Suarez-Tangil, Marie Vasek</p>
+                            <div class="pub-links">
+                                <a href="https://www.usenix.org/system/files/usenixsecurity25-agarwal-sharad.pdf">PDF</a>
+                                
+                            </div>
+                        </article>
+                    </div>
+                </div>
+				
+				<div class="pub-year-group">
+                    <h2 class="pub-year">2024</h2>
+                    <div class="pub-list">
+                        <article class="pub-item" data-keywords="online-harms">
+                            <div class="pub-meta">
+                                <span class="pub-venue">Crime Science</span>
+                            </div>
+                            <h3 class="pub-title">Positive behaviour interventions in online gaming: a systematic review of strategies applied in other environments</h3>
+                            <p class="pub-authors">Tiago Marques, Sandy Schumann, Enrico Mariconti</p>
+                            <div class="pub-links">
+                                <a href="https://link.springer.com/article/10.1186/s40163-024-00208-8">PDF</a>
+                                
                             </div>
                         </article>
                     </div>
@@ -88,8 +155,8 @@
 
     <footer class="site-footer">
         <div class="container footer-inner">
-            <span class="footer-logo">YourLab</span>
-            <p>© 2026 Your Name · Your Institution</p>
+            <span class="footer-logo">Harms Lab</span>
+            <p>This website has been built with the support of Generative AI</p>
         </div>
     </footer>
 

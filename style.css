@@ -18,7 +18,7 @@
 	--orangelogo:	#faa528;
 	--black:		#000000;
 
-    --font-display: 'DM Serif Display', Georgia, serif;
+    --font-display: 'Montserrat', sans-serif;
     --font-body:    'DM Sans', system-ui, sans-serif;
 
     --max-w:    1100px;
@@ -63,7 +63,7 @@ img { max-width: 100%; display: block; }
     padding: 0 1.5rem;
 }
 
-.section-pad { padding: 4rem 0; }
+.section-pad { padding: 2rem 0; }
 .alt-bg { background: var(--sand); }
 
 .two-col {
@@ -225,6 +225,8 @@ img { max-width: 100%; display: block; }
     border: 1px solid var(--border);
     border-radius: var(--radius);
     padding: 1.5rem;
+	padding-top: 0.1rem;
+	/*width: fit-content*/
 }
 .info-card h3 {
     font-family: var(--font-body);
@@ -249,7 +251,11 @@ img { max-width: 100%; display: block; }
     padding: 0.25rem 0.65rem;
     font-size: 0.85rem;
     color: var(--text);
+	display: flex;
+	width: fit-content
 }
+
+
 
 /* ---------- News ---------- */
 .news h2 { margin-bottom: 1.5rem; }
@@ -506,4 +512,42 @@ img { max-width: 100%; display: block; }
     .hero-badge { display: none; }
     .person-card--large { flex-direction: column; }
     .footer-inner { flex-direction: column; text-align: center; }
+}
+
+/*
+ul {
+    padding-left: 1.5rem;
+} */
+
+
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.filter-btn {
+    border: 1px solid var(--text);
+    background: var(--white);
+    padding: 0.35rem 0.9rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-family: var(--font-body);
+    cursor: pointer;
+    transition: background var(--transition), border-color var(--transition);
+}
+
+.filter-btn:hover {
+    border-color: var(--orange);
+}
+
+.filter-btn.active {
+    background: var(--text);
+    color: var(--orangelogo);
+    border-color: var(--orangelogo);
+}
+
+.pub-item.hidden {
+    display: none;
 }

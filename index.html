@@ -21,6 +21,7 @@
                 <li><a href="people.html">People</a></li>
                 <li><a href="publications.html">Publications</a></li>
                 <li><a href="teaching.html">Teaching</a></li>
+                <li><a href="news.html">News</a></li>
                 <li><a href="contact.html">Stay in Touch</a></li>
             </ul>
             <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
@@ -96,20 +97,10 @@
 					<section class="news section-pad alt-bg">
 						<div class="container">
 							<h2>Latest News</h2>
-							<div class="news-grid">
-								<article class="news-card">
-									<time>May 2026</time>
-									<p>Our paper "Situational Crime Prevention and Child Online Safety: A Comparative Analysis of Metaverse-ready Games" has been accepted at <strong>Journal of Cybersecurity</strong>.</p>
-								</article>
-								<article class="news-card">
-									<time>May 2026</time>
-									<p>Our student <strong>Shu Jia Chee</strong> presented "Decoding Influence Narratives: Identifying Persuasion and Propaganda Techniques in Twitter Discourse on Violent Extremism" at <strong>ICWSM '26</strong>!</p>
-								</article>
-								<article class="news-card">
-									<time>April 2026</time>
-									<p>Time for our UG supervisees to hand in their dissertations. Well done!</p>
-								</article>
+							<div class="news-grid" id="news-list-home">
+								<!-- Populated automatically by script.js from news-data.js -->
 							</div>
+							<a href="news.html" class="news-more-link">See all news &rarr;</a>
 						</div>
 					</section>
                     
@@ -164,6 +155,7 @@
         </div>
     </footer>
 
+    <script src="news-data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -281,6 +281,44 @@ img { max-width: 100%; display: block; }
 }
 .news-card p { color: var(--muted); font-size: 0.92rem; }
 
+.news-more-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text);
+}
+.news-more-link:hover { color: var(--orangelogo); opacity: 1; }
+
+/* ---------- Newsletter Banner (News page) ---------- */
+.newsletter-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    background: var(--sand);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.75rem 2rem;
+    margin-bottom: 2.5rem;
+}
+.newsletter-text h2 { font-size: 1.3rem; margin-bottom: 0.3rem; }
+.newsletter-text p { color: var(--muted); font-size: 0.92rem; max-width: 480px; margin: 0; }
+
+.newsletter-btn {
+    flex-shrink: 0;
+    background: var(--text);
+    color: var(--orangelogo);
+    font-weight: 600;
+    font-size: 0.88rem;
+    padding: 0.65rem 1.4rem;
+    border-radius: 20px;
+    white-space: nowrap;
+    transition: opacity var(--transition);
+}
+.newsletter-btn:hover { opacity: 0.85; }
+
 /* ---------- Quick Links ---------- */
 .quicklinks h2 { margin-bottom: 1.5rem; }
 .ql-grid {

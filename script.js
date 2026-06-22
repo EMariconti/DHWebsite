@@ -44,3 +44,26 @@ if (presetFilter) {
     const matchingBtn = document.querySelector(`.filter-btn[data-filter="${presetFilter}"]`);
     if (matchingBtn) matchingBtn.click();
 }
+
+// News rendering — reads from NEWS_ITEMS (defined in news-data.js)
+// Renders a single news-card for a given item
+function renderNewsCard(item) {
+    return `
+        <article class="news-card">
+            <time>${item.date}</time>
+            <p>${item.html}</p>
+        </article>
+    `;
+}
+
+// Home page: show only the 3 latest items
+const newsListHome = document.getElementById('news-list-home');
+if (newsListHome && typeof NEWS_ITEMS !== 'undefined') {
+    newsListHome.innerHTML = NEWS_ITEMS.slice(0, 3).map(renderNewsCard).join('');
+}
+
+// News page: show the full list
+const newsListFull = document.getElementById('news-list-full');
+if (newsListFull && typeof NEWS_ITEMS !== 'undefined') {
+    newsListFull.innerHTML = NEWS_ITEMS.map(renderNewsCard).join('');
+}

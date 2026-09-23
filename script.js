@@ -67,3 +67,46 @@ const newsListFull = document.getElementById('news-list-full');
 if (newsListFull && typeof NEWS_ITEMS !== 'undefined') {
     newsListFull.innerHTML = NEWS_ITEMS.map(renderNewsCard).join('');
 }
+
+
+
+// =============================================
+// Blog rendering — reads from BLOG_POSTS (defined in blog-data.js)
+// =============================================
+
+// blog.html: render the list of all posts
+const blogList = document.getElementById('blog-list');
+if (blogList && typeof BLOG_POSTS !== 'undefined') {
+    blogList.innerHTML = BLOG_POSTS.map(post => `
+        <a href="blog-post.html?id=${post.id}" class="blog-card">
+            <div class="blog-card-meta">
+                <time>${post.date}</time>
+                <span class="blog-author">${post.author}</span>
+            </div>
+            <h2 class="blog-card-title">${post.title}</h2>
+            <p class="blog-card-excerpt">${post.excerpt}</p>
+            <span class="blog-read-more">Read post &rarr;</span>
+        </a>
+    `).join('');
+}
+
+// blog-post.html: render an individual post from the ?id= parameter
+const postBody = document.getElementById('post-body');
+if (postBody && typeof BLOG_POSTS !== 'undefined') {
+    const postId = parseInt(new URLSearchParams(window.location.search).get('id'));
+    const post = BLOG_POSTS.find(p => p.id === postId);
+
+    if (post) {
+        document.title = post.title + ' · Harms Lab';
+        document.getElementById('post-title').textContent = post.title;
+        document.getElementById('post-meta').textContent = post.date + ' · ' + post.author;
+        postBody.innerHTML = post.content
+			.trim()
+			.split(/\n\s*\n/)
+			.map(p => `<p>${p.trim()}</p>`)
+			.join('');
+    } else {
+        document.getElementById('post-title').textContent = 'Post not found';
+        postBody.innerHTML = '<p>Sorry, this post could not be found. <a href="blog.html">Return to the blog</a>.</p>';
+    }
+}

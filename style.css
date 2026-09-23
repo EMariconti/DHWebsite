@@ -590,3 +590,109 @@ ul {
 .pub-item.hidden {
     display: none;
 }
+
+
+/* ---------- Blog ---------- */
+.blog-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.blog-card {
+    display: block;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 1.5rem 1.75rem;
+    color: var(--text);
+    transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition);
+}
+.blog-card:hover {
+    border-color: var(--orangelogo);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+    transform: translateY(-2px);
+    opacity: 1;
+}
+
+.blog-card-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 0.4rem;
+}
+.blog-card-meta time {
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--orangelogo);
+}
+.blog-author {
+    font-size: 0.82rem;
+    color: var(--muted);
+}
+.blog-card-meta time + .blog-author::before {
+    content: '·';
+    margin-right: 1rem;
+    color: var(--border);
+}
+
+.blog-card-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+    color: var(--text);
+}
+.blog-card-excerpt {
+    font-size: 0.92rem;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+}
+.blog-read-more {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--orangelogo);
+}
+
+/* ---------- Blog post body ---------- */
+.post-back {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: rgba(255,255,255,0.6);
+    margin-bottom: 1rem;
+}
+.post-back:hover { color: var(--orangelogo); opacity: 1; }
+
+.post-body {
+    max-width: 720px;
+}
+.post-body p {
+    color: var(--muted);
+    margin-bottom: 1rem;
+    font-size: 0.97rem;
+    line-height: 1.8;
+}
+.post-body h2 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+    color: var(--text);
+}
+.post-body ul, .post-body ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+.post-body li {
+    color: var(--muted);
+    font-size: 0.97rem;
+    margin-bottom: 0.3rem;
+    line-height: 1.8;
+}
+.post-body a { color: var(--orangelogo); }
+.post-body strong { color: var(--text); }
+
+.post-footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+}

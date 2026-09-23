@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post · Harms Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://umami-em-ari.vercel.app/script.js" data-website-id="93b373d1-3349-46d1-801b-556b410afc2d"></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">HARMS Lab</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="people.html">People</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="teaching.html">CPD &amp; Teaching</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="contact.html">Stay in Touch</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <a href="blog.html" class="post-back">&larr; Back to Blog</a>
+                <h1 id="post-title">Loading…</h1>
+                <p id="post-meta"></p>
+            </div>
+        </section>
+
+        <section class="section-pad">
+            <div class="container">
+                <article id="post-body" class="post-body">
+                    <!-- Filled automatically by script.js from blog-data.js -->
+                </article>
+                <div class="post-footer">
+                    <a href="blog.html" class="news-more-link">&larr; Back to all posts</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <span class="footer-logo">Harms Lab</span>
+            <p>This website has been built with the support of Generative AI</p>
+        </div>
+    </footer>
+
+    <script src="news-data.js"></script>
+    <script src="blog-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
